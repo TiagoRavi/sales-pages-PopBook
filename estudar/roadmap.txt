@@ -1,0 +1,6 @@
+1. Trocar textos mock pelos textos reais da oferta
+2. Substituir imagens em public/images
+3. Ligar checkout real
+4. Integrar pixels reais
+5. Adicionar testimonials, pricing e countdown
+6. Subir em Vercel

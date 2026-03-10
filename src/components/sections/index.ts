@@ -1,0 +1,11 @@
+export { Authority } from "./Authority";
+export { Benefits } from "./Benefits";
+export { FAQ } from "./FAQ";
+export { FinalCTA } from "./FinalCTA";
+export { Hero } from "./Hero";
+export { Offer } from "./Offer";
+export { Problem } from "./Problem";
+export { Scarcity } from "./Scarcity";
+export { Solution } from "./Solution";
+export { Testimonials } from "./Testimonials";
+export { TrustBar } from "./TrustBar";
