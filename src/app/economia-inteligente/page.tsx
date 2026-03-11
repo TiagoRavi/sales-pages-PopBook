@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { SalesPageTemplate } from "@/src/templates/SalesPageTemplate";
 import { economiaInteligenteData } from "@/src/products/economia-inteligente/data";
 import { siteConfig } from "@/src/config/site";
+import { getCheckoutUrl } from "@/src/utils/helpers";
+import type { CheckoutPlatform } from "@/src/types/product";
 
 export const metadata: Metadata = {
   title: economiaInteligenteData.name,
@@ -38,6 +40,44 @@ export const metadata: Metadata = {
   },
 };
 
-export default function EconomiaInteligentePage() {
-  return <SalesPageTemplate product={economiaInteligenteData} />;
+type PageProps = {
+  searchParams?: Promise<{
+    platform?: string;
+  }>;
+};
+
+export default async function EconomiaInteligentePage({ searchParams }: PageProps) {
+  const params = await searchParams;
+  const platformParam = params?.platform;
+
+  const platform: CheckoutPlatform | undefined =
+    platformParam === "hotmart" || platformParam === "kiwify"
+      ? platformParam
+      : undefined;
+
+  const checkoutUrl = getCheckoutUrl(economiaInteligenteData, platform);
+
+  const product = {
+    ...economiaInteligenteData,
+    offer: economiaInteligenteData.offer
+      ? {
+          ...economiaInteligenteData.offer,
+          cta: {
+            ...economiaInteligenteData.offer.cta,
+            href: checkoutUrl,
+          },
+        }
+      : undefined,
+    finalCta: economiaInteligenteData.finalCta
+      ? {
+          ...economiaInteligenteData.finalCta,
+          button: {
+            ...economiaInteligenteData.finalCta.button,
+            href: checkoutUrl,
+          },
+        }
+      : undefined,
+  };
+
+  return <SalesPageTemplate product={product} />;
 }

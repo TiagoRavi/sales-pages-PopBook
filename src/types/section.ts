@@ -1,6 +1,6 @@
 export type CTAButton = {
   label: string;
-  href: string;
+  href?: string;
 };
 
 export type ImageData = {

@@ -4,7 +4,13 @@ export const economiaInteligenteData: ProductData = {
   id: "economia-inteligente",
   name: "Economia Inteligente",
   slug: "economia-inteligente",
-  checkoutUrl: "https://pay.hotmart.com/H104814335H?checkoutMode=2&off=59soxnxj",
+
+  checkoutLinks: {
+    hotmart: "https://pay.hotmart.com/H104814335H?checkoutMode=2&off=59soxnxj",
+    kiwify: "https://pay.kiwify.com.br/orbCJCz",
+  },
+
+  checkoutPlatform: "hotmart",
   theme: "premium",
 
   hero: {
@@ -161,7 +167,6 @@ export const economiaInteligenteData: ProductData = {
     ],
     cta: {
       label: "Comprar agora",
-      href: "https://pay.hotmart.com/H104814335H?checkoutMode=2&off=59soxnxj",
     },
     notes: ["🔒 Compra segura", "⚡ Acesso imediato", "🛡️ Garantia de 7 dias"],
   },
@@ -209,7 +214,6 @@ export const economiaInteligenteData: ProductData = {
       "Garanta agora seu acesso e dê o primeiro passo para organizar seu dinheiro com mais clareza e tranquilidade.",
     button: {
       label: "Quero meu acesso agora",
-      href: "https://pay.hotmart.com/H104814335H?checkoutMode=2&off=59soxnxj",
     },
     notes: ["Acesso imediato", "Compra segura", "Garantia de 7 dias"],
   },

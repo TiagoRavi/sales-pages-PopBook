@@ -12,11 +12,17 @@ import {
   FinalCTASection,
 } from "@/src/types/section";
 
+export type CheckoutPlatform = "hotmart" | "kiwify";
+
 export type ProductData = {
   id: string;
   name: string;
   slug: string;
-  checkoutUrl: string;
+  checkoutLinks: {
+    hotmart?: string;
+    kiwify?: string;
+  };
+  checkoutPlatform?: CheckoutPlatform;
   theme?: "default" | "premium";
 
   hero?: HeroSection;
