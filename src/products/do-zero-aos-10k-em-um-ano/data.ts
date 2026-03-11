@@ -19,8 +19,8 @@ export const doZeroAos10kEmUmAnoData: ProductData = {
       "Descubra um caminho claro, direto e aplicável para organizar sua vida financeira, aumentar sua capacidade de ganho e agir com consistência — mesmo começando do absoluto zero.",
     mediaType: "image",
     image: {
-      src: "/images/products/do-zero-aos-10k-em-um-ano/mockup1.png",
-      alt: "Capa do e-book Do Zero aos 10K em Um Ano",
+      src: "/images/do-zero-aos-10k-em-um-ano/mockup1.png",
+      alt: "Do e-book Do Zero aos 10K em Um Ano",
     },
     primaryCta: {
       label: "Quero sair do zero",
