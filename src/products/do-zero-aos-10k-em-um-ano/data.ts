@@ -73,7 +73,7 @@ export const doZeroAos10kEmUmAnoData: ProductData = {
       "Plano de execução para transformar conhecimento em ação.",
     ],
     image: {
-      src: "/images/products/do-zero-aos-10k-em-um-ano/solution-book.png",
+      src: "/images/do-zero-aos-10k-em-um-ano/mockup1.png",
       alt: "Visual do conteúdo do e-book Do Zero aos 10K em Um Ano",
     },
   },

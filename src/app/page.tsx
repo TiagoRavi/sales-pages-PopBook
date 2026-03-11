@@ -23,7 +23,19 @@ const products = [
       kiwify: "/do-zero-aos-10k-em-um-ano/k",
     },
   },
+
+  {
+  name: "7 Passos para Sair das Dívidas",
+  description:
+    "Um guia prático para organizar suas finanças, criar um plano de pagamento estratégico e recuperar sua paz financeira.",
+  links: {
+    hotmart: "/7-passos-para-sair-das-dividas/h",
+    kiwify: "/7-passos-para-sair-das-dividas/k",
+  },
+}
 ];
+
+
 
 export default function HomePage() {
   return (

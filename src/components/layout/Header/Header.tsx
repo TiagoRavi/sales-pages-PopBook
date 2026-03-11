@@ -11,8 +11,8 @@ export function Header() {
         </Link>
 
         <nav className="site-nav" aria-label="Navegação principal">
-          <Link href="#benefits">Benefícios</Link>
-          <Link href="#offer">Oferta</Link>
+          <Link href="#beneficios">Benefícios</Link>
+          <Link href="#oferta">Oferta</Link>
           <Link href="#faq">FAQ</Link>
         </nav>
       </Container>
