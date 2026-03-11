@@ -20,7 +20,9 @@ export function Hero({ data, productId, productName }: Props) {
         <div className="hero-grid">
           <div className="hero-content">
             {data.eyebrow && <p className="hero-eyebrow">{data.eyebrow}</p>}
+
             <h1 className="hero-title">{data.headline}</h1>
+
             <p className="hero-subheadline">{data.subheadline}</p>
 
             <div className="hero-actions">
@@ -35,11 +37,15 @@ export function Hero({ data, productId, productName }: Props) {
                     {data.primaryCta.label}
                   </TrackedButton>
                 ) : (
-                  <Button href={data.primaryCta.href}>{data.primaryCta.label}</Button>
+                  <Button href={data.primaryCta.href}>
+                    {data.primaryCta.label}
+                  </Button>
                 ))}
 
               {data.secondaryCta?.href && (
-                <Button href={data.secondaryCta.href}>{data.secondaryCta.label}</Button>
+                <Button href={data.secondaryCta.href}>
+                  {data.secondaryCta.label}
+                </Button>
               )}
             </div>
           </div>
@@ -51,8 +57,8 @@ export function Hero({ data, productId, productName }: Props) {
                 alt={data.image.alt}
                 width={520}
                 height={520}
-                className="hero-image"
                 priority
+                className="hero-image"
               />
             </div>
           )}
