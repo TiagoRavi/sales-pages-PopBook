@@ -17,6 +17,13 @@ export const setePassosParaSairDasDividasData: ProductData = {
     headline: "Aprenda 7 passos práticos para sair das dívidas e recuperar sua paz financeira",
     subheadline:
       "Um guia direto ao ponto para organizar sua vida financeira, criar um plano de pagamento inteligente, negociar dívidas e construir hábitos que evitam novos problemas com dinheiro.",
+
+    mediaType: "image",
+    image: {
+      src: "/images/7-passos-para-sair-das-dividas/mockup.png",
+      alt: "E-book 7 Passos para Sair das Dívidas",
+    },
+
     primaryCta: {
       label: "Quero sair das dívidas",
       href: "#oferta",
@@ -62,6 +69,7 @@ export const setePassosParaSairDasDividasData: ProductData = {
     subtitle: "Sem promessas milagrosas. Sem fórmulas mágicas.",
     description:
       "Você vai aprender a encarar sua realidade financeira com clareza, organizar suas dívidas, escolher uma estratégia de pagamento, cortar excessos sem viver em privação, aumentar sua renda e criar hábitos mais saudáveis com o dinheiro.",
+
     points: [
       "Diagnóstico financeiro simples e objetivo.",
       "Mapeamento completo das dívidas e prioridades.",
@@ -71,6 +79,11 @@ export const setePassosParaSairDasDividasData: ProductData = {
       "Negociação de dívidas com mais preparo e consciência.",
       "Hábitos financeiros para evitar recaídas no futuro.",
     ],
+
+    image: {
+      src: "/images/7-passos-para-sair-das-dividas/mockup.png",
+      alt: "Conteúdo do e-book 7 Passos para Sair das Dívidas",
+    },
   },
 
   benefits: {
