@@ -7,9 +7,12 @@ import { siteConfig } from "@/src/config/site";
 const products = [
   {
     name: "Economia Inteligente",
-    href: "/economia-inteligente",
     description:
       "Aprenda a organizar seu dinheiro e construir uma vida financeira mais segura.",
+    links: {
+      hotmart: "/economia-inteligente/h",
+      kiwify: "/economia-inteligente/k",
+    },
   },
 ];
 
@@ -30,13 +33,19 @@ export default function HomePage() {
 
         <div className="product-list-grid">
           {products.map((product) => (
-            <article key={product.href} className="benefit-card premium-card">
+            <article key={product.name} className="benefit-card premium-card">
               <h2>{product.name}</h2>
               <p>{product.description}</p>
 
-              <Link className="btn" href={product.href}>
-                Ver página
-              </Link>
+              <div style={{ display: "flex", gap: "10px", marginTop: "16px" }}>
+                <Link className="btn" href={product.links.hotmart}>
+                  Ver página (Hotmart)
+                </Link>
+
+                <Link className="btn btn-secondary" href={product.links.kiwify}>
+                  Ver página (Kiwify)
+                </Link>
+              </div>
             </article>
           ))}
         </div>

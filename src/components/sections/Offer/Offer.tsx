@@ -57,18 +57,20 @@ export function Offer({ data, productId, productName }: Props) {
                 Pagamento simples e acesso liberado após a confirmação.
               </div>
 
-              <div className="offer-button-wrap">
-                <TrackedButton
-                  href={data.cta.href}
-                  productId={productId}
-                  productName={productName}
-                  section="offer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {data.cta.label}
-                </TrackedButton>
-              </div>
+              {data.cta?.href && (
+                <div className="offer-button-wrap">
+                  <TrackedButton
+                    href={data.cta.href}
+                    productId={productId}
+                    productName={productName}
+                    section="offer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {data.cta.label}
+                  </TrackedButton>
+                </div>
+              )}
 
               {data.notes?.length ? (
                 <div className="offer-notes">
