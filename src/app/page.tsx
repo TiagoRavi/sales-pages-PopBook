@@ -14,6 +14,15 @@ const products = [
       kiwify: "/economia-inteligente/k",
     },
   },
+  {
+    name: "Do Zero aos 10K em Um Ano",
+    description:
+      "Um guia prático para sair da estagnação, organizar sua vida financeira e construir um plano real de crescimento em 12 meses.",
+    links: {
+      hotmart: "/do-zero-aos-10k-em-um-ano/h",
+      kiwify: "/do-zero-aos-10k-em-um-ano/k",
+    },
+  },
 ];
 
 export default function HomePage() {
@@ -21,7 +30,7 @@ export default function HomePage() {
     <Section className="home-page">
       <Container>
         <div className="home-hero">
-          <Badge>Produto disponível</Badge>
+          <Badge>Produtos disponíveis</Badge>
 
           <h1 className="hero-title">{siteConfig.name}</h1>
 
@@ -37,7 +46,7 @@ export default function HomePage() {
               <h2>{product.name}</h2>
               <p>{product.description}</p>
 
-              <div style={{ display: "flex", gap: "10px", marginTop: "16px" }}>
+              <div style={{ display: "flex", gap: "10px", marginTop: "16px", flexWrap: "wrap" }}>
                 <Link className="btn" href={product.links.hotmart}>
                   Ver página (Hotmart)
                 </Link>
