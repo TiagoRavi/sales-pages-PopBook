@@ -42,7 +42,17 @@ const products = [
       hotmart: "/renda-extra-com-ia-para-iniciantes/h",
       kiwify: "/renda-extra-com-ia-para-iniciantes/k",
     },
-  }
+  },
+
+  {
+    name: "Reserva de Emergência",
+    description:
+      "Aprenda a construir sua reserva financeira mesmo ganhando entre R$2.000 e R$3.500.",
+    links: {
+      hotmart: "/reserva-de-emergencia/h",
+      kiwify: "/reserva-de-emergencia/k",
+    },
+  },
 ];
 
 export default function HomePage() {
