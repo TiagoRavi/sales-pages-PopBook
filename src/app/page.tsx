@@ -32,10 +32,18 @@ const products = [
     hotmart: "/7-passos-para-sair-das-dividas/h",
     kiwify: "/7-passos-para-sair-das-dividas/k",
   },
-}
+},
+
+  {
+    name: "Renda Extra com IA para Iniciantes",
+    description:
+      "Aprenda a usar inteligência artificial no dia a dia para economizar tempo, melhorar sua produtividade e criar oportunidades reais de renda extra.",
+    links: {
+      hotmart: "/renda-extra-com-ia-para-iniciantes/h",
+      kiwify: "/renda-extra-com-ia-para-iniciantes/k",
+    },
+  }
 ];
-
-
 
 export default function HomePage() {
   return (
