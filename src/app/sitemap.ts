@@ -10,10 +10,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/reserva-de-emergencia",
   ];
 
-  return pages.map((page) => ({
+  const blogPosts = [
+    "/blog/reserva-de-emergencia",
+    "/blog/como-economizar-dinheiro",
+    "/blog/sair-das-dividas",
+  ];
+
+  const allPages = [...pages, ...blogPosts];
+
+  return allPages.map((page) => ({
     url: `${baseUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: "weekly",
+    changeFrequency: "monthly",
     priority: page === "" ? 1 : 0.8,
   }));
 }

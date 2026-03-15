@@ -9,3 +9,4 @@ export { Scarcity } from "./Scarcity";
 export { Solution } from "./Solution";
 export { Testimonials } from "./Testimonials";
 export { TrustBar } from "./TrustBar";
+export { Bonus } from "./Bonus";

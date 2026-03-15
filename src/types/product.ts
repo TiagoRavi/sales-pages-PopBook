@@ -3,6 +3,7 @@ import {
   ProblemSection,
   SolutionSection,
   BenefitsSection,
+  BonusSection,
   TestimonialsSection,
   AuthoritySection,
   OfferSection,
@@ -29,6 +30,7 @@ export type ProductData = {
   problem?: ProblemSection;
   solution?: SolutionSection;
   benefits?: BenefitsSection;
+  bonus?: BonusSection;
   testimonials?: TestimonialsSection;
   authority?: AuthoritySection;
   offer?: OfferSection;

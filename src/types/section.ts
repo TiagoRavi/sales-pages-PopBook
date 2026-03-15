@@ -49,6 +49,19 @@ export type BenefitsSection = {
   }[];
 };
 
+export type BonusSection = {
+  id: string;
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  image?: ImageData;
+  items: {
+    title: string;
+    description: string;
+    value?: string;
+  }[];
+};
+
 export type TestimonialsSection = {
   id: string;
   title: string;
