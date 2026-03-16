@@ -130,6 +130,38 @@ export const economiaInteligenteData: ProductData = {
     ],
   },
 
+  bonus: {
+          id: "bonus",
+          eyebrow: "Bônus exclusivo",
+          title: "Receba também o app Pluma Digital Premium",
+          subtitle:
+            "Transforme seu celular Android em uma estante digital para organizar e ler seus ebooks com mais praticidade.",
+          image: {
+            src: "/images/7-passos-para-sair-das-dividas/mockup-pluma-digital.png",
+            alt: "Mockup do app Pluma Digital Premium",
+          },
+          items: [
+            {
+              title: "App Pluma Digital Premium (APK)",
+              description:
+                "Baixe e instale no seu Android para acessar seus ebooks em um só lugar.",
+              value: "Exclusivo para Android",
+            },
+            {
+              title: "Leitor e organizador de PDFs",
+              description:
+                "Importe seus arquivos, organize sua biblioteca e retome a leitura de onde parou.",
+              value: "Mais praticidade",
+            },
+            {
+              title: "Manual de instalação incluso",
+              description:
+                "Receba o passo a passo para instalar e usar o aplicativo sem complicação.",
+              value: "27 páginas",
+            },
+          ],
+        },
+
   authority: {
     id: "authority",
     title: "Um material pensado para quem precisa de clareza, não de complicação",

@@ -116,23 +116,55 @@ export const doZeroAos10kEmUmAnoData: ProductData = {
     ],
   },
 
-  authority: {
-    id: "autoridade",
-    title: "Um material direto ao ponto para quem quer evolução real",
-    subtitle: "Feito para quem quer sair da teoria.",
-    description:
-      "O e-book foi estruturado para ajudar você a organizar melhor sua vida financeira, construir um plano realista de crescimento e agir com mais consistência no dia a dia.",
-    highlights: [
-      "Linguagem simples e prática.",
-      "Conteúdo pensado para iniciantes.",
-      "Plano de evolução aplicável na rotina real.",
-      "Foco em clareza, organização e execução.",
-    ],
-    image: {
-      src: "/images/products/do-zero-aos-10k-em-um-ano/author.png",
-      alt: "Apresentação do material Do Zero aos 10K em Um Ano",
+  bonus: {
+          id: "bonus",
+          eyebrow: "Bônus exclusivo",
+          title: "Receba também o app Pluma Digital Premium",
+          subtitle:
+            "Transforme seu celular Android em uma estante digital para organizar e ler seus ebooks com mais praticidade.",
+          image: {
+            src: "/images/7-passos-para-sair-das-dividas/mockup-pluma-digital.png",
+            alt: "Mockup do app Pluma Digital Premium",
+          },
+          items: [
+            {
+              title: "App Pluma Digital Premium (APK)",
+              description:
+                "Baixe e instale no seu Android para acessar seus ebooks em um só lugar.",
+              value: "Exclusivo para Android",
+            },
+            {
+              title: "Leitor e organizador de PDFs",
+              description:
+                "Importe seus arquivos, organize sua biblioteca e retome a leitura de onde parou.",
+              value: "Mais praticidade",
+            },
+            {
+              title: "Manual de instalação incluso",
+              description:
+                "Receba o passo a passo para instalar e usar o aplicativo sem complicação.",
+              value: "27 páginas",
+            },
+          ],
+        }, 
+        
+    authority: {
+      id: "autoridade",
+      title: "Um material direto ao ponto para quem quer evolução real",
+      subtitle: "Feito para quem quer sair da teoria.",
+      description:
+        "O e-book foi estruturado para ajudar você a organizar melhor sua vida financeira, construir um plano realista de crescimento e agir com mais consistência no dia a dia.",
+      highlights: [
+        "Linguagem simples e prática.",
+        "Conteúdo pensado para iniciantes.",
+        "Plano de evolução aplicável na rotina real.",
+        "Foco em clareza, organização e execução.",
+      ],
+      image: {
+        src: "/images/products/do-zero-aos-10k-em-um-ano/author.png",
+        alt: "Apresentação do material Do Zero aos 10K em Um Ano",
+      },
     },
-  },
 
   testimonials: {
     id: "depoimentos",

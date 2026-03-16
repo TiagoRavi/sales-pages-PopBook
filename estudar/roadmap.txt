@@ -1,6 +1,264 @@
-1. Trocar textos mock pelos textos reais da oferta
-2. Substituir imagens em public/images
-3. Ligar checkout real
-4. Integrar pixels reais
-5. Adicionar testimonials, pricing e countdown
-6. Subir em Vercel
+📦 Estado Atual do Projeto
+
+Repositório:
+
+sales-pages-PopBook
+
+Branches sincronizadas:
+
+main
+develop
+
+Último commit relevante:
+
+feat(legal): add privacy policy page and APK delivery page
+🧱 Arquitetura do Projeto
+
+Framework:
+
+Next.js (App Router)
+TypeScript
+CSS global custom
+
+Estrutura principal:
+
+src/
+📂 app (rotas)
+app/
+ ├── page.tsx (home)
+ ├── layout.tsx
+ ├── sitemap.ts
+ │
+ ├── pluma-digital-premium/
+ │   └── page.tsx        (entrega APK)
+ │
+ ├── politica-de-privacidade/
+ │   └── page.tsx        (política site + app)
+ │
+ ├── 7-passos-para-sair-das-dividas/
+ ├── do-zero-aos-10k-em-um-ano/
+ ├── economia-inteligente/
+ ├── renda-extra-com-ia-para-iniciantes/
+ └── reserva-de-emergencia/
+
+Cada produto possui:
+
+page.tsx
+[platform]/page.tsx
+🧩 Sistema de páginas de vendas
+
+Template central:
+
+templates/SalesPageTemplate.tsx
+
+Seções disponíveis:
+
+Hero
+Problem
+Solution
+Benefits
+Bonus
+Testimonials
+Authority
+Offer
+Guarantee
+Scarcity
+FAQ
+FinalCTA
+
+Organização:
+
+components/sections/
+
+Cada seção isolada.
+
+📦 Sistema de produtos
+
+Dados centralizados em:
+
+products/
+
+Exemplo:
+
+products/7-passos-para-sair-das-dividas/data.ts
+
+Tipagem:
+
+types/product.ts
+types/section.ts
+🎨 Sistema visual
+
+CSS global:
+
+styles/
+ ├── globals.css
+ ├── variables.css
+ ├── reset.css
+ └── utilities.css
+
+Componentes UI:
+
+components/ui/
+
+Elementos:
+
+Button
+Container
+Section
+Badge
+Heading
+
+Design atual:
+
+premium UI
+glass effect
+dark theme
+gradients
+cards
+📄 Páginas institucionais
+
+Criadas agora:
+
+/pluma-digital-premium
+/politica-de-privacidade
+APK Delivery Page
+
+Arquivo:
+
+src/app/pluma-digital-premium/page.tsx
+
+Função:
+
+entregar download do APK
+
+Download atual:
+
+Google Drive
+
+APK:
+
+Pluma Digital Premium
+Android only
+Política de Privacidade
+
+Arquivo:
+
+src/app/politica-de-privacidade/page.tsx
+
+Cobre:
+
+site
+app
+cookies
+analytics
+checkout
+armazenamento local
+📊 Analytics
+
+Integrado em:
+
+lib/
+
+Pixels:
+
+facebookPixel.ts
+googleTagManager.ts
+tiktokPixel.ts
+🔎 SEO
+
+Já existe:
+
+app/sitemap.ts
+
+Recomendado incluir:
+
+/pluma-digital-premium
+/politica-de-privacidade
+📁 Assets
+
+Mockups:
+
+public/images/
+🚀 Fluxo Git
+
+Fluxo usado:
+
+feature → develop → main
+
+Branches:
+
+main
+develop
+
+Deploy provável:
+
+main
+📌 Próximos passos recomendados
+1️⃣ Página Termos de Uso
+
+Nova rota:
+
+/termos-de-uso
+2️⃣ Página de download premium
+
+Melhorar UX com:
+
+mockup do app
+manual PDF
+botão download
+instrução instalação
+3️⃣ Página do App (SEO)
+
+Criar landing:
+
+/app-pluma-digital
+
+Para ranquear.
+
+4️⃣ Blog SEO
+
+Estrutura já preparada:
+
+src/content/blog/
+
+Pode gerar tráfego orgânico.
+
+🧠 Contexto funcional do projeto
+
+O projeto é uma plataforma de páginas de vendas de infoprodutos com:
+
+estrutura reutilizável
+componentização
+dados desacoplados
+SEO
+analytics
+multi-produtos
+
+Produtos atuais:
+
+7 passos para sair das dívidas
+economia inteligente
+reserva de emergência
+renda extra com IA
+do zero aos 10k em um ano
+🧩 Produto adicional
+
+App:
+
+Pluma Digital Premium
+
+Função:
+
+leitor de ebooks PDF
+organizador de biblioteca
+Android APK
+
+Distribuição:
+
+download via página
+✔️ Projeto pronto para
+escala de páginas
+SEO
+ads
+produtos digitais
+apps

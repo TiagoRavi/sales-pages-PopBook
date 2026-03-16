@@ -4,54 +4,87 @@ import { Section } from "@/src/components/ui/Section/Section";
 import { Badge } from "@/src/components/ui/Badge/Badge";
 import { siteConfig } from "@/src/config/site";
 
-const products = [
+const productGroups = [
   {
-    name: "Economia Inteligente",
-    description:
-      "Aprenda a organizar seu dinheiro e construir uma vida financeira mais segura.",
-    links: {
-      hotmart: "/economia-inteligente/h",
-      kiwify: "/economia-inteligente/k",
-    },
+    title: "Finanças",
+    description: "Produtos para organizar sua vida financeira, reduzir pressão e construir mais segurança.",
+    products: [
+      {
+        name: "Economia Inteligente",
+        description:
+          "Aprenda a organizar seu dinheiro e construir uma vida financeira mais segura.",
+        links: {
+          hotmart: "/economia-inteligente/h",
+          kiwify: "/economia-inteligente/k",
+        },
+      },
+      {
+        name: "7 Passos para Sair das Dívidas",
+        description:
+          "Um guia prático para organizar suas finanças, criar um plano de pagamento estratégico e recuperar sua paz financeira.",
+        links: {
+          hotmart: "/7-passos-para-sair-das-dividas/h",
+          kiwify: "/7-passos-para-sair-das-dividas/k",
+        },
+      },
+      {
+        name: "Reserva de Emergência",
+        description:
+          "Aprenda a construir sua reserva financeira mesmo ganhando entre R$2.000 e R$3.500.",
+        links: {
+          hotmart: "/reserva-de-emergencia/h",
+          kiwify: "/reserva-de-emergencia/k",
+        },
+      },
+    ],
   },
   {
-    name: "Do Zero aos 10K em Um Ano",
-    description:
-      "Um guia prático para sair da estagnação, organizar sua vida financeira e construir um plano real de crescimento em 12 meses.",
-    links: {
-      hotmart: "/do-zero-aos-10k-em-um-ano/h",
-      kiwify: "/do-zero-aos-10k-em-um-ano/k",
-    },
+    title: "Renda Extra",
+    description: "Produtos voltados para geração de renda, crescimento financeiro e novas oportunidades.",
+    products: [
+      {
+        name: "Do Zero aos 10K em Um Ano",
+        description:
+          "Um guia prático para sair da estagnação, organizar sua vida financeira e construir um plano real de crescimento em 12 meses.",
+        links: {
+          hotmart: "/do-zero-aos-10k-em-um-ano/h",
+          kiwify: "/do-zero-aos-10k-em-um-ano/k",
+        },
+      },
+      {
+        name: "Renda Extra com IA para Iniciantes",
+        description:
+          "Aprenda a usar inteligência artificial no dia a dia para economizar tempo, melhorar sua produtividade e criar oportunidades reais de renda extra.",
+        links: {
+          hotmart: "/renda-extra-com-ia-para-iniciantes/h",
+          kiwify: "/renda-extra-com-ia-para-iniciantes/k",
+        },
+      },
+      {
+        name: "Renda Extra Realista",
+        description:
+          "Aprenda como criar uma renda extra possível mesmo com pouco tempo, pouco dinheiro e uma rotina cheia.",
+        links: {
+          hotmart: "/renda-extra-realista/h",
+          kiwify: "/renda-extra-realista/k",
+        },
+      },
+    ],
   },
-
   {
-  name: "7 Passos para Sair das Dívidas",
-  description:
-    "Um guia prático para organizar suas finanças, criar um plano de pagamento estratégico e recuperar sua paz financeira.",
-  links: {
-    hotmart: "/7-passos-para-sair-das-dividas/h",
-    kiwify: "/7-passos-para-sair-das-dividas/k",
-  },
-},
-
-  {
-    name: "Renda Extra com IA para Iniciantes",
-    description:
-      "Aprenda a usar inteligência artificial no dia a dia para economizar tempo, melhorar sua produtividade e criar oportunidades reais de renda extra.",
-    links: {
-      hotmart: "/renda-extra-com-ia-para-iniciantes/h",
-      kiwify: "/renda-extra-com-ia-para-iniciantes/k",
-    },
-  },
-
-  {
-    name: "Reserva de Emergência",
-    description:
-      "Aprenda a construir sua reserva financeira mesmo ganhando entre R$2.000 e R$3.500.",
-    links: {
-      hotmart: "/reserva-de-emergencia/h",
-      kiwify: "/reserva-de-emergencia/k",
-    },
+    title: "Desenvolvimento Pessoal",
+    description: "Produtos para fortalecer disciplina, rotina e evolução pessoal.",
+    products: [
+      {
+        name: "O Poder de Cultivar Bons Hábitos",
+        description:
+          "Aprenda como construir hábitos positivos, substituir padrões negativos e criar uma rotina mais consistente com pequenas ações diárias.",
+        links: {
+          hotmart: "/o-poder-de-cultivar-bons-habitos/h",
+          kiwify: "/o-poder-de-cultivar-bons-habitos/k",
+        },
+      },
+    ],
   },
 ];
 
@@ -70,22 +103,33 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="product-list-grid">
-          {products.map((product) => (
-            <article key={product.name} className="benefit-card premium-card">
-              <h2>{product.name}</h2>
-              <p>{product.description}</p>
-
-              <div style={{ display: "flex", gap: "10px", marginTop: "16px", flexWrap: "wrap" }}>
-                <Link className="btn" href={product.links.hotmart}>
-                  Ver página (Hotmart)
-                </Link>
-
-                <Link className="btn btn-secondary" href={product.links.kiwify}>
-                  Ver página (Kiwify)
-                </Link>
+        <div className="home-groups">
+          {productGroups.map((group) => (
+            <section key={group.title} className="home-group">
+              <div className="home-group-header">
+                <h2 className="home-group-title">{group.title}</h2>
+                <p className="home-group-description">{group.description}</p>
               </div>
-            </article>
+
+              <div className="product-list-grid">
+                {group.products.map((product) => (
+                  <article key={product.name} className="benefit-card premium-card home-product-card">
+                    <h3>{product.name}</h3>
+                    <p>{product.description}</p>
+
+                    <div className="home-product-actions">
+                      <Link className="btn" href={product.links.hotmart}>
+                        Ver página (Hotmart)
+                      </Link>
+
+                      <Link className="btn btn-secondary" href={product.links.kiwify}>
+                        Ver página (Kiwify)
+                      </Link>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
           ))}
         </div>
       </Container>
