@@ -36,6 +36,15 @@ const productGroups = [
           kiwify: "/reserva-de-emergencia/k",
         },
       },
+      {
+        name: "Detox das Bets",
+        description:
+          "Um plano prático de 21 dias para interromper o ciclo das apostas, reorganizar o orçamento e retomar o controle financeiro.",
+        links: {
+          hotmart: "/detox-das-bets/h",
+          kiwify: "/detox-das-bets/k",
+        },
+      },
     ],
   },
   {

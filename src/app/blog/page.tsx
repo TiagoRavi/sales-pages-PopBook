@@ -10,7 +10,7 @@ const posts = [
       "Aprenda como começar a guardar dinheiro mesmo ganhando pouco e construa segurança financeira aos poucos.",
   },
   {
-    slug: "como-economizar-dinheiro",
+    slug: "economizar-dinheiro",
     title: "Como economizar dinheiro no dia a dia",
     description:
       "Veja hábitos simples que ajudam a reduzir gastos e abrir espaço no orçamento.",

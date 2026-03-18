@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogPosts = [
     "/blog/reserva-de-emergencia",
-    "/blog/como-economizar-dinheiro",
+    "/blog/economizar-dinheiro",
     "/blog/sair-das-dividas",
   ];
 
