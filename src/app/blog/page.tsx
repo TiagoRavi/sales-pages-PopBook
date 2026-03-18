@@ -21,6 +21,13 @@ const posts = [
     description:
       "Entenda como reorganizar sua vida financeira e começar a sair do aperto com estratégia.",
   },
+  
+  {
+    slug: "detox-das-bets",
+    title: "Como parar de perder dinheiro com apostas",
+    description:
+      "Entenda o ciclo das apostas, como ele afeta seu dinheiro e como começar a recuperar o controle financeiro com um plano simples.",
+  },
 ];
 
 export default function BlogPage() {

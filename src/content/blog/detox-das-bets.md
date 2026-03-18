@@ -144,4 +144,4 @@ Reorganizar sua vida financeira em 21 dias
 
 Então veja o guia completo que preparei.
 
-👉 [Veja o ebook completo](https://www.popbook.com.br/reserva-de-emergencia/h)
+👉 [Veja o ebook completo](https://www.popbook.com.br/detox-das-bets/h)

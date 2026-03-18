@@ -70,7 +70,7 @@ export const detoxDasBetsData: ProductData = {
       "Foco em controle, clareza e aplicação real",
     ],
     image: {
-      src: "/images/detox-das-bets/mockup.png",
+      src: "/images/detox-das-bets/mockup1.png",
       alt: "Método Detox das Bets",
     },
   },
