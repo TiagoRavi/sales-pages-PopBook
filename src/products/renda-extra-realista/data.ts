@@ -34,6 +34,25 @@ export const rendaExtraRealistaData: ProductData = {
       href: "#oferta",
     },
   },
+  
+  previewImages: [
+    {
+      src: "/images/imagens-pagina-de-vendas/ebooks1.jpeg",
+      alt: "Página interna do ebook 1",
+    },
+    {
+      src: "/images/imagens-pagina-de-vendas/ebooks2.jpeg",
+      alt: "Página interna do ebook 2",
+    },
+    {
+      src: "/images/imagens-pagina-de-vendas/ebooks3.jpeg",
+      alt: "Página interna do ebook 3",
+    },
+    {
+      src: "/images/imagens-pagina-de-vendas/ebooks4.jpeg",
+      alt: "Página interna do ebook 4",
+    },
+  ],
 
   problem: {
     id: "problema",

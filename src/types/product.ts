@@ -26,6 +26,11 @@ export type ProductData = {
   checkoutPlatform?: CheckoutPlatform;
   theme?: "default" | "premium";
 
+  previewImages?: {
+    src: string;
+    alt: string;
+  }[];
+  
   hero?: HeroSection;
   problem?: ProblemSection;
   solution?: SolutionSection;
